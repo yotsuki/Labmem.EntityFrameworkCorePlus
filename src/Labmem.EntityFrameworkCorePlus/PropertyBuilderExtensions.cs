@@ -43,6 +43,9 @@ namespace Labmem.EntityFrameworkCorePlus
                 if(attrs.Any(a=>a is KeyAttribute)) {
                     keys.Add((Property)entityTypeBuilder.Metadata.FindProperty(property));
                 }
+                if (attrs.Any(a => a is IndexAttribute)) {
+                    entityTypeBuilder.HasIndex(property.Name);
+                }
                 if (entityTypeBuilder.Metadata.FindNavigation(property) == null) {
                     entityTypeBuilder.Property(property.Name).PlusBuild(serviceProvider);
                 }
@@ -67,9 +70,11 @@ namespace Labmem.EntityFrameworkCorePlus
                 .Where(a => a.AttributeType.GetTypeInfo().IsSubclassOf(typeof(PropertyAttribute)))) {
                 
                 var attr = (PropertyAttribute)Activator.CreateInstance(cad.AttributeType, cad.ConstructorArguments.Select(ca => ca.Value).ToArray());
-                var service = serviceProvider.GetService(attr.BindingInterface) as IPlusPropertyBuilder;
-                if (service != null) {
-                    service.Build(propertyBuilder, attr);
+                if (attr != null &&　attr.BindingInterface != null) {
+                    var service = serviceProvider.GetService(attr.BindingInterface) as IPlusPropertyBuilder;
+                    if (service != null) {
+                        service.Build(propertyBuilder, attr);
+                    }
                 }
             }
             return propertyBuilder;
