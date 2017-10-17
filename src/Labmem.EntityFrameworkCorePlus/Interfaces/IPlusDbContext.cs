@@ -7,6 +7,7 @@ namespace Labmem.EntityFrameworkCorePlus.Interfaces
 {
     public interface IPlusDbContext
     {
+        ILabmemServiceCollectionLoader Loader { get; set; }
         IServiceProvider GetPlusServiceProvider();
     }
 }
