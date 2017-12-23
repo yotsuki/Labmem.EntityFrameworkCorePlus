@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.6
+VisualStudioVersion = 15.0.27004.2009
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Labmem.EntityFrameworkCorePlus", "Labmem.EntityFrameworkCorePlus\Labmem.EntityFrameworkCorePlus.csproj", "{88C54341-6140-48E8-A302-0BD9F89AB307}"
 EndProject
@@ -11,9 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Labmem.EntityFrameworkCoreP
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Labmem.EntityFrameworkCorePlus.SqlServer", "Labmem.EntityFrameworkCorePlus.SqlServer\Labmem.EntityFrameworkCorePlus.SqlServer.csproj", "{E7145084-7268-404D-970F-3485365EEBAB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Labmem.EntityFrameworkCorePlus.MySql", "Labmem.EntityFrameworkCorePlus.MySql\Labmem.EntityFrameworkCorePlus.MySql.csproj", "{07822EA5-D861-4CA7-9667-BEC0A524AD4D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Labmem.EntityFrameworkCorePlus.MySql", "Labmem.EntityFrameworkCorePlus.MySql\Labmem.EntityFrameworkCorePlus.MySql.csproj", "{07822EA5-D861-4CA7-9667-BEC0A524AD4D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Labmem.EntityFrameworkCorePlus.PostgreSQL", "Labmem.EntityFrameworkCorePlus.Npgsql\Labmem.EntityFrameworkCorePlus.PostgreSQL.csproj", "{FE40F9B3-8649-4D62-87D5-CFB62AFB1A5C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Labmem.EntityFrameworkCorePlus.PostgreSQL", "Labmem.EntityFrameworkCorePlus.Npgsql\Labmem.EntityFrameworkCorePlus.PostgreSQL.csproj", "{FE40F9B3-8649-4D62-87D5-CFB62AFB1A5C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{054A538A-3437-44CA-A0CB-1FBCA983E4D6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -48,5 +50,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EDD2A1B0-6B8D-47A4-AC92-768528BAB066}
 	EndGlobalSection
 EndGlobal

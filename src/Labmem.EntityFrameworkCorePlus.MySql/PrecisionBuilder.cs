@@ -1,12 +1,7 @@
 ﻿using Labmem.EntityFrameworkCorePlus.Attributes;
 using Labmem.EntityFrameworkCorePlus.Interfaces;
-using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Pomelo.EntityFrameworkCore.MySql;
-using Pomelo.EntityFrameworkCore.Extensions;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Labmem.EntityFrameworkCorePlus.MySql
 {
